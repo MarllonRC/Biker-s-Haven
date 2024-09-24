@@ -1,0 +1,139 @@
+/* Estilos Gerais */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Para manter o rodapé na parte inferior */
+}
+
+/* Popup */
+.popup {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: #28a745;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    transition: opacity 0.5s;
+    opacity: 1;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Cabeçalho */
+header {
+    background: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Container Principal */
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    flex: 1; /* Faz com que o container principal ocupe o espaço disponível */
+}
+
+/* Formulário */
+form {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+}
+
+/* Títulos */
+h2, h3 {
+    margin-top: 0;
+}
+
+/* Lista de Itens */
+#itens-carrinho {
+    list-style-type: none;
+    padding: 0;
+}
+
+#itens-carrinho li {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Total */
+#total {
+    font-size: 1.5em;
+    margin: 20px 0;
+    text-align: right;
+}
+
+/* Inputs */
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Botão */
+.btn {
+    display: block;
+    width: 100%; /* Faz com que o botão ocupe toda a largura do container */
+    padding: 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2em;
+    transition: background-color 0.3s;
+    margin-top: 20px; /* Espaço entre o botão e o formulário */
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+/* Estilos do Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    background: #333;
+    color: #fff;
+    position: relative;
+}
+
+/* Fixa o rodapé na parte inferior */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+    form {
+        padding: 10px;
+    }
+
+    .btn {
+        padding: 12px;
+        font-size: 1em;
+    }
+
+    #total {
+        font-size: 1.2em;
+    }
+}

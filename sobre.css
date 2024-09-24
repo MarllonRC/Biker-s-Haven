@@ -1,0 +1,38 @@
+/* Estilos Gerais */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Para manter o rodapé na parte inferior */
+}
+
+main {
+    flex: 1; /* Faz com que o main ocupe o espaço disponível */
+}
+
+/* Estilos do Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    background: #333;
+    color: #fff;
+    margin-top: auto; /* Faz com que o footer fique na parte inferior */
+}
+
+/* Media Query para Responsividade */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    #carrinho {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .btn {
+        position: relative;
+    }
+}

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biker's Haven</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1>Biker's Haven</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <button id="toggle-carrinho" class="btn carrinho"><i class="fas fa-shopping-cart"></i></button>
+            <button id="finalizar-compra" class="btn finalizar">Finalizar Compra</button>
+            <aside id="carrinho" class="hidden">
+                <h2>Itens no Carrinho</h2>
+                <ul id="itens-carrinho"></ul>
+            </aside>
+            <section id="produtos">
+                <h2>Produtos</h2>
+                <div class="produto" data-id="1">
+                    <h3>Sundown Vblade 250</h3>
+                    <img src="imagens/Sundown_vblade_250.jpg.webp" alt="Sundown Vblade 250">
+                    <p>Uma moto lendária, dizem que o único que conseguiu pilotá-la sem morrer foi RAUL EDUARDO BREMM PELLIN, lendário motoqueiro numa máquina lendária!</p>
+                    <p><strong>OBS: SE VOCÊ NÃO FOR LENDÁRIO, NÃO PILOTE ESSA MÁQUINA LENDÁRIA!</strong></p>
+                    <p>Preço: R$ 12.000</p>
+                    <button onclick="adicionarAoCarrinho(1)">Adicionar ao Carrinho</button>
+                </div>
+                <div class="produto" data-id="2">
+                    <h3>Yamaha Fazer 250</h3>
+                    <img src="imagens/Yamaha_Fazer_ 250.webp" alt="Yamaha Fazer 250">
+                    <p>A Yamaha Fazer 250 combina performance e conforto, perfeita para quem busca aventuras. Com um motor robusto e um design aerodinâmico, essa moto é ideal para quem deseja explorar novas estradas sem abrir mão do conforto.</p>
+                    <p>Preço: R$ 15.000,00</p>
+                    <button onclick="adicionarAoCarrinho(2)">Adicionar ao Carrinho</button>
+                </div>
+                <div class="produto" data-id="3">
+                    <h3>Suzuki GSX-S750</h3>
+                    <img src="imagens/Suzuki_GSX-S750.jpg" alt="Suzuki GSX-S750">
+                    <p>Uma naked de performance, a Suzuki GSX-S750 é feita para quem busca emoção e agilidade nas ruas. Seu motor de alta cilindrada e o design agressivo proporcionam uma experiência emocionante de pilotagem em qualquer situação.</p>
+                    <p>Preço: R$ 32.000,00</p>
+                    <button onclick="adicionarAoCarrinho(3)">Adicionar ao Carrinho</button>
+                </div>
+                <div class="produto" data-id="4">
+                    <h3>Kawasaki Ninja 400</h3>
+                    <img src="imagens/Kawasaki_Ninja_400.jpg" alt="Kawasaki Ninja 400">
+                    <p>Leve e ágil, a Kawasaki Ninja 400 é a escolha ideal para iniciantes e experientes. Seu design esportivo e desempenho impressionante tornam cada viagem uma verdadeira aventura nas estradas.</p>
+                    <p>Preço: R$ 25.000,00</p>
+                    <button onclick="adicionarAoCarrinho(4)">Adicionar ao Carrinho</button>
+                </div>
+                <div class="produto" data-id="5">
+                    <h3>BMW G 310 R</h3>
+                    <img src="imagens/BMW_G_310_R.png" alt="BMW G 310 R">
+                    <p>A BMW G 310 R é uma naked premium que oferece qualidade e desempenho excepcionais. Com um motor ágil e um chassi leve, é perfeita para quem busca praticidade e estilo nas ruas da cidade.</p>
+                    <p>Preço: R$ 29.000,00</p>
+                    <button onclick="adicionarAoCarrinho(5)">Adicionar ao Carrinho</button>
+                </div>
+                <div class="produto" data-id="6">
+                    <h3>Harley-Davidson Iron 883</h3>
+                    <img src="imagens/Harley-Davidson Iron_883.webp" alt="Harley-Davidson Iron 883">
+                    <p>A verdadeira experiência das motos custom, a Harley-Davidson Iron 883 combina um design icônico com uma performance robusta. Ideal para os amantes do estilo clássico, cada viagem é uma afirmação de liberdade.</p>
+                    <p>Preço: R$ 45.000,00</p>
+                    <button onclick="adicionarAoCarrinho(6)">Adicionar ao Carrinho</button>
+                </div>
+                <div class="produto" data-id="7">
+                    <h3>Ducati Monster 821</h3>
+                    <img src="imagens/Ducati Monster_821.jpg" alt="Ducati Monster 821">
+                    <p>A fusão perfeita de performance e estilo, a Ducati Monster 821 é uma moto naked que proporciona uma experiência única. Com um motor potente e design marcante, é ideal para quem não tem medo de se destacar.</p>
+                    <p>Preço: R$ 58.000,00</p>
+                    <button onclick="adicionarAoCarrinho(7)">Adicionar ao Carrinho</button>
+                </div>
+                <div class="produto" data-id="8">
+                    <h3>Honda CB 500F</h3>
+                    <img src="imagens/Honda_CB_500F.jpg" alt="Honda CB 500F">
+                    <p>Versátil e eficiente, a Honda CB 500F é perfeita para o dia a dia e longas viagens. Seu motor equilibrado e o design ergonômico proporcionam conforto e agilidade em qualquer situação.</p>
+                    <p>Preço: R$ 19.500,00</p>
+                    <button onclick="adicionarAoCarrinho(8)">Adicionar ao Carrinho</button>
+                </div>
+                <div class="produto" data-id="9">
+                    <h3>KTM 390 Duke</h3>
+                    <img src="imagens/KTM_390_Duke.jpg" alt="KTM 390 Duke">
+                    <p>A KTM 390 Duke é a naked mais ágil e divertida da categoria, com um design agressivo e um desempenho excepcional. Ideal para pilotos que buscam emoção e controle nas ruas.</p>
+                    <p>Preço: R$ 22.000,00</p>
+                    <button onclick="adicionarAoCarrinho(9)">Adicionar ao Carrinho</button>
+                </div>
+            </section>
+        </div>
+    </main>
+    <div id="popup" class="popup hidden"></div>
+    <footer>
+        <p>&copy; 2024 Biker's Haven</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

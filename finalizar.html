@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finalizar Compra - Minha Loja de Motos</title>
+    <link rel="stylesheet" href="finalizar.css"> 
+</head>
+<body>
+    <div id="popup" class="popup hidden"></div>
+    <header>
+        <div class="container">
+            <h1>Finalizar Compra</h1>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <form id="form-compra">
+                <h2>Itens no Carrinho</h2>
+                <ul id="itens-carrinho"></ul>
+                <p id="total">Total: R$ 0.00</p>
+                
+                <h3>Informações de Entrega</h3>
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+                
+                <label for="endereco">Endereço:</label>
+                <input type="text" id="endereco" name="endereco" required>
+                
+                <label for="cidade">Cidade:</label>
+                <input type="text" id="cidade" name="cidade" required>
+                
+                <label for="estado">Estado:</label>
+                <input type="text" id="estado" name="estado" required>
+            </form>
+            <button type="submit" id="confirmar-compra" class="btn">Confirmar Compra</button>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Biker's Haven</p>
+    </footer>
+    <script src="finalizar.js"></script>
+</body>
+</html>
