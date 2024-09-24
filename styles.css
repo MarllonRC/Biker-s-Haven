@@ -85,6 +85,12 @@ nav ul li a {
 }
 
 /* Estilo da Seção de Produtos */
+
+img {
+    max-width: 100%; /* Faz com que a imagem nunca ultrapasse a largura do seu contêiner */
+    height: auto; /* Mantém a proporção da imagem */
+}
+
 #produtos {
     flex: 1;
     padding: 20px;
